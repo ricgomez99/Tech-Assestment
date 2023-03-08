@@ -1,0 +1,75 @@
+.navBar {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navLinks {
+  width: 80rem;
+  height: 40px;
+  margin: 68px 60px;
+  gap: 1.5rem;
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.link {
+  text-decoration: none;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.images {
+  width: 84px;
+  height: 84px;
+  padding-left: 30px;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo2 {
+  width: 41px;
+  height: 41px;
+  object-fit: contain;
+  position: relative;
+  display: flex;
+  margin-left: 28px;
+  transform: translateY(-55px);
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  transform: translateX(77.5rem);
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.socialImg {
+  width: 25px;
+  height: 25px;
+}
+
+@media (max-width: 1040px) {
+  .socialMedia {
+    transform: translateX(53rem);
+  }
+}
