@@ -1,0 +1,131 @@
+.formContainer {
+  display: flex;
+  position: relative;
+  justify-self: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 24px;
+  width: 320px;
+  height: 530px;
+}
+
+.formTitle {
+  font-weight: 700;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #f10a0a;
+  line-height: 125%;
+  text-align: justify;
+  margin-bottom: 8px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.subTitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #313131;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputContainer {
+  width: 100%;
+  height: 330px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input1 {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 4px;
+  height: 30px;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #949494;
+}
+
+.input2 {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 4px;
+  height: 70px;
+  background: #ffffff;
+  border: 1px solid #949494;
+  outline: none;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px, 16px, 8px, 16px;
+  gap: 10px;
+  height: 38px;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #949494;
+}
+
+.dateInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  height: 30px;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #949494;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #313131;
+  width: 281px;
+  height: 36px;
+  justify-content: center;
+}
+.label input {
+  margin-right: 13px;
+}
+
+.subBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 60px;
+  background: #f10a0a;
+  border-radius: 30px;
+  border: 2px solid #f10a0a;
+  margin-top: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.subBtn:hover {
+  background: transparent;
+  border: 2px solid #f10a0a;
+  color: #f10a0a;
+}
+
+@media (max-width: 740px) {
+  .formContainer {
+    width: 320px;
+    height: 460px;
+    align-items: center;
+    padding: 24px 32px;
+  }
+  .subBtn {
+    width: 100%;
+  }
+}
