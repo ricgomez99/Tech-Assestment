@@ -26,6 +26,11 @@
   font-weight: 700;
   align-items: center;
   padding-top: 12px;
+  color: #262626;
+}
+
+.link:hover {
+  color: #444444;
 }
 
 .images {
