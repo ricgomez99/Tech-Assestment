@@ -78,3 +78,9 @@
     transform: translateX(53rem);
   }
 }
+
+@media (max-width: 840px) {
+  .socialMedia {
+    transform: translateX(38rem);
+  }
+}
