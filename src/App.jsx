@@ -6,6 +6,7 @@ import MidSection from "./components/MidSection";
 import Stats from "./components/Stats";
 import LastSection from "./components/LastSection";
 import "./styles/App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <div className="last">
         <LastSection />
       </div>
+      <Footer />
     </div>
   );
 }
