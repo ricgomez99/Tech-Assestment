@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./navBar.module.css";
+import "./navBar.css";
+import { useState } from "react";
 
 export default function NavBar() {
   const links = [
@@ -12,43 +13,32 @@ export default function NavBar() {
     { name: "LOREM IPSUM", path: "/" },
     { name: "LOREM IPSUM", path: "/" },
   ];
+
+  const [isOpen, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(!isOpen);
+  };
+
   return (
-    <nav className={styles.navBar}>
-      <div className={styles.container}>
-        <div className={styles.images}>
-          <img className={styles.logo} src="/navIcon-1.svg" />
-          <img className={styles.logo2} src="/navIcon-2.svg" />
+    <div className="Navbar">
+      <span className="logo">
+        <img src="/header.png" alt="logo" />
+      </span>
+      <div className={`items ${isOpen && "open"}`}>
+        <div className="socialMedia">
+          <img className="socialImg" src="/linkedin.png" alt="linkedin" />
+          <img className="socialImg" src="/facebook.png" alt="facebook" />
+          <img className="socialImg" src="/instagram.png" alt="instagram" />
         </div>
-        <div className={styles.socialMedia}>
-          <img
-            className={styles.socialImg}
-            src="/linkedin.png"
-            alt="linkedin"
-          />
-          <img
-            className={styles.socialImg}
-            src="/facebook.png"
-            alt="facebook"
-          />
-          <img
-            className={styles.socialImg}
-            src="/instagram.png"
-            alt="instagram"
-          />
-        </div>
-        <div className={styles.navLinks}>
-          {links?.map((link, index) => (
-            <a
-              className={styles.link}
-              rel="navLinks"
-              href={link.path}
-              key={index}
-            >
-              {link.name}
-            </a>
-          ))}
-        </div>
+        {links?.map((link, index) => (
+          <a className="link" rel="navLinks" href={link.path} key={index}>
+            {link.name}
+          </a>
+        ))}
       </div>
-    </nav>
+      <div className={`toggle ${isOpen && "open"}`} onClick={handleClick}>
+        <div className="bar"></div>
+      </div>
+    </div>
   );
 }
