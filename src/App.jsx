@@ -3,6 +3,7 @@ import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
 import MidSection from "./components/MidSection";
+import Stats from "./components/Stats";
 import "./styles/App.css";
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
       </div>
       <div className="mid">
         <MidSection />
+      </div>
+      <div>
+        <Stats />
       </div>
     </div>
   );
