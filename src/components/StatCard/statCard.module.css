@@ -15,12 +15,15 @@
   height: 83px;
   color: #fff;
   margin-bottom: 6px;
+  object-fit: scale-down;
 }
 
 .title {
   font-size: 56px;
   font-weight: 700;
   color: #fff;
+  display: flex;
+  margin: 15px 0;
 }
 
 .text {
@@ -31,4 +34,22 @@
   text-align: center;
   line-height: 27px;
   color: #fff;
+}
+
+@media (max-width: 740px) {
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+  .icon {
+    width: 63px;
+    height: 63px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+  .text {
+    width: 250px;
+  }
 }
