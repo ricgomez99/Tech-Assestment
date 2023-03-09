@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
+import MidSection from "./components/MidSection";
 import "./styles/App.css";
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       </div>
       <div className="sec3">
         <ThirdSection />
+      </div>
+      <div className="mid">
+        <MidSection />
       </div>
     </div>
   );
