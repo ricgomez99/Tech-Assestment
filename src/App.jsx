@@ -4,6 +4,7 @@ import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
 import MidSection from "./components/MidSection";
 import Stats from "./components/Stats";
+import LastSection from "./components/LastSection";
 import "./styles/App.css";
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
       </div>
       <div>
         <Stats />
+      </div>
+      <div className="last">
+        <LastSection />
       </div>
     </div>
   );
