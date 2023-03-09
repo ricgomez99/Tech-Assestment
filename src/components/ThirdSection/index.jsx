@@ -1,12 +1,16 @@
 import React from "react";
-import styles from "./SecondSection.module.css";
+import styles from "./thirdSection.module.css";
+import SearchBtn from "../SearchBtn";
 
-export default function SecondSection() {
+export default function ThirdSection() {
   return (
-    <section className={styles.container}>
-      <div className={styles.info}>
-        <h3 className={styles.infoTitle}>Lorem Ipsum</h3>
-        <p className={styles.infoText}>
+    <section className={styles.mainCont}>
+      <div className={styles.imageCont}>
+        <img className={styles.image} src="/city.png" alt="city" />
+      </div>
+      <div className={styles.textCont}>
+        <h3 className={styles.textTit}>Lorem Ipsum</h3>
+        <p className={styles.textP}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ornare
           sed adipiscing ac sagittis egestas. Risus dolor, senectus mauris
           tincidunt platea. Tempus viverra amet lacinia velit condimentum sed
@@ -14,9 +18,7 @@ export default function SecondSection() {
           interdum a integer rhoncus. Imperdiet commodo dignissim velit interdum
           quis.
         </p>
-      </div>
-      <div className={styles.imgCont}>
-        <img className={styles.img} src="/context.png" alt="girl pic" />
+        <SearchBtn />
       </div>
     </section>
   );

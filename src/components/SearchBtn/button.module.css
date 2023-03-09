@@ -1,0 +1,24 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 60px;
+  background: #f10a0a;
+  border-radius: 30px;
+  border: 2px solid #f10a0a;
+  margin-top: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 2px solid #f10a0a;
+  color: #f10a0a;
+}
+
+@media (max-width: 740px) {
+  .btn {
+    width: 100%;
+  }
+}
