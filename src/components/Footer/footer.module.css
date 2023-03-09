@@ -100,3 +100,24 @@
   height: 20px;
   object-fit: contain;
 }
+
+@media (max-width: 740px) {
+  .footer {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo {
+    flex-direction: row;
+  }
+
+  .navLinks {
+    gap: 18px;
+    width: 300px;
+    align-self: center;
+  }
+}
